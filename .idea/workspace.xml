@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90da1c88-ab00-4552-b235-10f235c0c5ea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Mago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Personagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2Eqk4VP1EdMuRQ88KRgQQwFWxkj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
