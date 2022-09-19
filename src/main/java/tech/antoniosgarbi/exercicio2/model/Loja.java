@@ -17,6 +17,41 @@ public class Loja {
         this.videoGames = videoGames;
     }
 
+    public void listaLivros() {
+        if(livros.isEmpty()) {
+            System.out.println("A loja não tem livros no seu estoque.\n");
+        } else {
+            System.out.println("A loja " + nome + " possui estes livros para venda:\n");
+            for(Livro livro : livros) {
+                System.out.println(livro);
+            }
+        }
+    }
+
+    public void listaVideoGames() {
+        if(videoGames.isEmpty()) {
+            System.out.println("A loja não tem video-games no seu estoque\n");
+        } else {
+            System.out.println("A loja " + nome + ", possui estes video-games para venda: \n");
+            for(VideoGame videoGame : videoGames) {
+                System.out.println(videoGame);
+            }
+
+        }
+    }
+
+    public double calculaPatrimonio() {
+        double patrimonio = 0;
+        for(Livro livro : livros) {
+            patrimonio += (livro.getPreco() * livro.getQtd());
+        }
+        for (VideoGame videoGame : videoGames) {
+            patrimonio += (videoGame.getPreco() * videoGame.getQtd());
+        }
+        System.out.printf("O patrimonio da loja: %s é de R$%.2f", nome, patrimonio);
+        return patrimonio;
+    }
+
     public String getNome() {
         return nome;
     }

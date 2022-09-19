@@ -1,6 +1,8 @@
 package tech.antoniosgarbi.exercicio2.model;
 
-public class VideoGame extends Produto {
+import tech.antoniosgarbi.exercicio2.interfaces.Imposto;
+
+public class VideoGame extends Produto implements Imposto {
     private String marca;
     private String modelo;
     private boolean isUsado;
@@ -16,7 +18,15 @@ public class VideoGame extends Produto {
 
     @Override
     public double calcularImposto() {
-        return 0;
+        double imposto = 0;
+        if(isUsado) {
+            imposto = getPreco() * 0.25;
+            System.out.printf("Imposto do " + getNome() + " usado, %.2f\n", imposto);
+        } else {
+            imposto = getPreco() * 0.25;
+            System.out.printf("Imposto do " + getNome() + ", %.2f\n", imposto);
+        }
+        return imposto;
     }
 
     public String getMarca() {
@@ -41,5 +51,13 @@ public class VideoGame extends Produto {
 
     public void setUsado(boolean usado) {
         isUsado = usado;
+    }
+
+    @Override
+    public String toString() {
+        return "Video-game: " + getNome() +
+                ", preço: " + getPreco() +
+                ", quantidade: " + getQtd() +
+                " em estoque.";
     }
 }

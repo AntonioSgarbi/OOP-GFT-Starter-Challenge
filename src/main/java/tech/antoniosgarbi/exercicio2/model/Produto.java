@@ -1,8 +1,6 @@
 package tech.antoniosgarbi.exercicio2.model;
 
-import tech.antoniosgarbi.exercicio2.interfaces.Imposto;
-
-public abstract class Produto implements Imposto {
+public abstract class Produto {
     private String nome;
     private double preco;
     private int qtd;
@@ -38,4 +36,5 @@ public abstract class Produto implements Imposto {
     public void setQtd(int qtd) {
         this.qtd = qtd;
     }
+
 }

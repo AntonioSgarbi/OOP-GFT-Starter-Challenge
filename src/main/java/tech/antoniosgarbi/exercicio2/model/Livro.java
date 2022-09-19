@@ -1,6 +1,8 @@
 package tech.antoniosgarbi.exercicio2.model;
 
-public class Livro extends Produto {
+import tech.antoniosgarbi.exercicio2.interfaces.Imposto;
+
+public class Livro extends Produto implements Imposto {
     private String autor;
     private String tema;
     private int qtdPag;
@@ -40,8 +42,21 @@ public class Livro extends Produto {
 
     @Override
     public double calcularImposto() {
-
-        return 0;
+        double imposto = 0;
+        if(tema.equals("educativo")) {
+            System.out.println("Livro educativo não tem imposto: " + getNome());
+        } else {
+            imposto = getPreco() * 0.25;
+            System.out.printf("R$ %.2f de impostos sobre o livro Senhor dos Anéis\n", imposto);
+        }
+        return imposto;
     }
 
+    @Override
+    public String toString() {
+        return "Titulo: " + getNome() +
+                ", preço: " + getPreco() +
+                ", quantidade: " + getQtdPag() +
+                " em estoque";
+    }
 }

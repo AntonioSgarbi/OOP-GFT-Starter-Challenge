@@ -9,67 +9,59 @@ public class Veiculo {
     private boolean isLigado;
     private int litrosCombustivel;
     private int velocidade;
-    private Double preco;
+    private double preco;
 
 
-    public void acelerar() {
-        this.velocidade += 20;
-
-    }
-
-    public void abastecer(int combustivel) {
-        this.verificarDisponibilidadeTanque(combustivel);
-        this.litrosCombustivel += combustivel;
-    }
-
-    public void frear() {
-        if (this.velocidade == 0)
-            System.out.println("O freio não funciona com o veículo parado!");
-//            throw new RuntimeException("O freio não funciona com o veículo parado!");
-        else if (this.velocidade <= 20) {
-            this.velocidade = 0;
-            System.out.println("O freio foi pressionado e o carro está parado agora");
-        } else {
-            this.velocidade -= 20;
-            System.out.printf("O freio foi pressionado e o carro está na velocidade: %s agora%n", this.velocidade);
-        }
-    }
-
-    public void pintar(String cor) {
-        this.cor = cor;
-        System.out.printf("O carro foi pintado e agora é da cor: %s%n", cor);
-    }
-
-    public void ligar() throws InterruptedException {
+    public void ligar() {
         if (!this.isLigado) {
-            System.out.print("Ligando o carro");
-            Thread.sleep(400);
-            System.out.print(".");
-            Thread.sleep(400);
-            System.out.print(".");
-            Thread.sleep(400);
-            System.out.println(".");
-            Thread.sleep(200);
+            System.out.println("Ligando o carro...");
             this.isLigado = true;
         }
         System.out.println("Sucesso!\nO veículo está ligado");
     }
 
-    public void desligar() {
-        if (velocidade != 0)
-            throw new RuntimeException("O veículo não pode ser desligado enquanto estiver em movimento");
-        else {
-            this.isLigado = false;
-            System.out.println("O veiculo foi desligado");
+    public void acelerar() {
+        if(isLigado) {
+            velocidade += 20;
+            System.out.println("Velocidade atual: " + velocidade);
         }
     }
 
-    private void verificarDisponibilidadeTanque(int quantidadeCombustivel) {
+    public void frear() {
+        if (velocidade == 0)
+            System.out.println("O freio não funciona com o veículo parado!");
+        else if (velocidade <= 20) {
+            velocidade = 0;
+            System.out.println("O freio foi pressionado e o carro está parado agora");
+        } else {
+            velocidade -= 20;
+            System.out.println("O freio foi pressionado e o carro está na velocidade " + velocidade + " agora.\n");
+        }
+    }
+
+    public void abastecer(int combustivelAdicionado) {
         int LIMITE_TANQUE = 60;
-        if (this.litrosCombustivel + quantidadeCombustivel > LIMITE_TANQUE) {
-            int volumeDisponivel = LIMITE_TANQUE - this.litrosCombustivel;
-            throw new RuntimeException("A quantidade informada ultrapassa a capacidade do tanque,\n" +
-                    "ainda é possível abastecer: " + volumeDisponivel + " litros.");
+        if (litrosCombustivel + combustivelAdicionado > LIMITE_TANQUE) {
+            int volumeDisponivel = LIMITE_TANQUE - litrosCombustivel;
+            System.out.println("A quantidade informada ultrapassa a capacidade do tanque,\n" +
+                    "ainda é possível abastecer: " + volumeDisponivel + " litros.\n");
+        } else {
+            litrosCombustivel += combustivelAdicionado;
+            System.out.println("O veiculo foi abastecido e está com: " + litrosCombustivel + " litros.\n");
+        }
+    }
+
+    public void pintar(String cor) {
+        this.cor = cor;
+        System.out.println("O veiculo foi pintado e agora é " + cor + "\n");
+    }
+
+    public void desligar() {
+        if (velocidade != 0)
+            System.out.println("O veículo não pode ser desligado enquanto estiver em movimento!\n");
+        else {
+            isLigado = false;
+            System.out.println("O veiculo foi desligado.\n");
         }
     }
 
@@ -137,11 +129,11 @@ public class Veiculo {
         this.velocidade = velocidade;
     }
 
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 }
