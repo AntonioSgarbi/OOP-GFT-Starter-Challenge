@@ -17,7 +17,7 @@ public class Livro extends Produto implements Imposto {
     }
 
     public String getAutor() {
-        return autor;
+        return this.autor;
     }
 
     public void setAutor(String autor) {
@@ -25,7 +25,7 @@ public class Livro extends Produto implements Imposto {
     }
 
     public String getTema() {
-        return tema;
+        return this.tema;
     }
 
     public void setTema(String tema) {
@@ -33,7 +33,7 @@ public class Livro extends Produto implements Imposto {
     }
 
     public int getQtdPag() {
-        return qtdPag;
+        return this.qtdPag;
     }
 
     public void setQtdPag(int qtdPag) {
@@ -43,7 +43,7 @@ public class Livro extends Produto implements Imposto {
     @Override
     public double calcularImposto() {
         double imposto = 0;
-        if(tema.equals("educativo")) {
+        if(this.tema.equals("educativo")) {
             System.out.println("Livro educativo não tem imposto: " + getNome());
         } else {
             imposto = getPreco() * 0.25;
@@ -54,9 +54,9 @@ public class Livro extends Produto implements Imposto {
 
     @Override
     public String toString() {
-        return "Titulo: " + getNome() +
-                ", preço: " + getPreco() +
-                ", quantidade: " + getQtdPag() +
+        return "Titulo: " + this.getNome() +
+                ", preço: " + this.getPreco() +
+                ", quantidade: " + this.getQtdPag() +
                 " em estoque";
     }
 }

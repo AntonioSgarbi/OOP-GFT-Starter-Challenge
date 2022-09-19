@@ -41,8 +41,8 @@ public class Guerreiro extends Personagem {
 
     public void aprenderHabilidade(String habilidade) {
         System.out.println("Habilidade liberada: " + habilidade);
-        habilidades.add(habilidade);
-        System.out.println("Habilidades disponíveis: " + habilidades);
+        this.habilidades.add(habilidade);
+        System.out.println("Habilidades disponíveis: " + this.habilidades);
     }
 
 }

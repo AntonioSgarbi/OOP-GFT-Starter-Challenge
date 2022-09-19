@@ -22,7 +22,7 @@ public abstract class Produto {
     }
 
     public double getPreco() {
-        return preco;
+        return this.preco;
     }
 
     public void setPreco(double preco) {
@@ -30,7 +30,7 @@ public abstract class Produto {
     }
 
     public int getQtd() {
-        return qtd;
+        return this.qtd;
     }
 
     public void setQtd(int qtd) {

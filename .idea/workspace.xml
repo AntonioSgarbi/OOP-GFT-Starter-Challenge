@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90da1c88-ab00-4552-b235-10f235c0c5ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/main/Exercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/main/Exercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Guerreiro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Mago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Personagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio4e5e6/Exercicio456.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio4e5e6/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio7/Exercicio7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio7/model/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio7/model/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio7/model/Supervisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio7/model/Vendedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Exercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Exercicio1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/main/Excercicio2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/PessoaComparator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

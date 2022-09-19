@@ -15,11 +15,11 @@ public class Funcionario {
     }
 
     public double bonificacao() {
-        return salario;
+        return this.salario;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -27,7 +27,7 @@ public class Funcionario {
     }
 
     public int getIdade() {
-        return idade;
+        return this.idade;
     }
 
     public void setIdade(int idade) {
@@ -35,7 +35,7 @@ public class Funcionario {
     }
 
     public double getSalario() {
-        return salario;
+        return this.salario;
     }
 
     public void setSalario(double salario) {

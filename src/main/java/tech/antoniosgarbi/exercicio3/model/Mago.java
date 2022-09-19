@@ -41,15 +41,16 @@ public class Mago extends Personagem {
 
     public void aprenderMagia(String magia) {
         System.out.println("Magia liberada: " + magia);
-        magias.add(magia);
+        this.magias.add(magia);
         System.out.println("Magias disponíveis: " + magias);
     }
 
     public List<String> getMagias() {
-        return magias;
+        return this.magias;
     }
 
     public void setMagias(List<String> magias) {
         this.magias = magias;
     }
+
 }

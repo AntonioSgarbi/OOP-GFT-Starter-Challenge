@@ -21,52 +21,54 @@ public class Veiculo {
     }
 
     public void acelerar() {
-        if(isLigado) {
-            velocidade += 20;
-            System.out.println("Velocidade atual: " + velocidade);
+        if(this.isLigado) {
+            this.velocidade += 20;
+            System.out.println("Velocidade atual: " + this.velocidade);
+        } else {
+            System.out.println("Não é possível acelerar o carro parado");
         }
     }
 
     public void frear() {
-        if (velocidade == 0)
+        if (this.velocidade == 0)
             System.out.println("O freio não funciona com o veículo parado!");
-        else if (velocidade <= 20) {
-            velocidade = 0;
+        else if (this.velocidade <= 20) {
+            this.velocidade = 0;
             System.out.println("O freio foi pressionado e o carro está parado agora");
         } else {
-            velocidade -= 20;
-            System.out.println("O freio foi pressionado e o carro está na velocidade " + velocidade + " agora.\n");
+            this.velocidade -= 20;
+            System.out.println("O freio foi pressionado e o carro está na velocidade " + this.velocidade + " agora.\n");
         }
     }
 
     public void abastecer(int combustivelAdicionado) {
         int LIMITE_TANQUE = 60;
-        if (litrosCombustivel + combustivelAdicionado > LIMITE_TANQUE) {
-            int volumeDisponivel = LIMITE_TANQUE - litrosCombustivel;
+        if (this.litrosCombustivel + combustivelAdicionado > LIMITE_TANQUE) {
+            int volumeDisponivel = LIMITE_TANQUE - this.litrosCombustivel;
             System.out.println("A quantidade informada ultrapassa a capacidade do tanque,\n" +
                     "ainda é possível abastecer: " + volumeDisponivel + " litros.\n");
         } else {
-            litrosCombustivel += combustivelAdicionado;
-            System.out.println("O veiculo foi abastecido e está com: " + litrosCombustivel + " litros.\n");
+            this.litrosCombustivel += combustivelAdicionado;
+            System.out.println("O veiculo foi abastecido e está com: " + this.litrosCombustivel + " litros.\n");
         }
     }
 
     public void pintar(String cor) {
         this.cor = cor;
-        System.out.println("O veiculo foi pintado e agora é " + cor + "\n");
+        System.out.println("O veiculo foi pintado e agora é " + this.cor + "\n");
     }
 
     public void desligar() {
-        if (velocidade != 0)
+        if (this.velocidade != 0)
             System.out.println("O veículo não pode ser desligado enquanto estiver em movimento!\n");
         else {
-            isLigado = false;
+            this.isLigado = false;
             System.out.println("O veiculo foi desligado.\n");
         }
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {
@@ -74,7 +76,7 @@ public class Veiculo {
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public void setModelo(String modelo) {
@@ -82,7 +84,7 @@ public class Veiculo {
     }
 
     public String getPlaca() {
-        return placa;
+        return this.placa;
     }
 
     public void setPlaca(String placa) {
@@ -90,7 +92,7 @@ public class Veiculo {
     }
 
     public String getCor() {
-        return cor;
+        return this.cor;
     }
 
     public void setCor(String cor) {
@@ -98,7 +100,7 @@ public class Veiculo {
     }
 
     public float getKm() {
-        return km;
+        return this.km;
     }
 
     public void setKm(float km) {
@@ -106,15 +108,15 @@ public class Veiculo {
     }
 
     public boolean isLigado() {
-        return isLigado;
+        return this.isLigado;
     }
 
     public void setLigado(boolean ligado) {
-        isLigado = ligado;
+        this.isLigado = ligado;
     }
 
     public int getLitrosCombustivel() {
-        return litrosCombustivel;
+        return this.litrosCombustivel;
     }
 
     public void setLitrosCombustivel(int litrosCombustivel) {
@@ -122,7 +124,7 @@ public class Veiculo {
     }
 
     public int getVelocidade() {
-        return velocidade;
+        return this.velocidade;
     }
 
     public void setVelocidade(int velocidade) {
@@ -130,7 +132,7 @@ public class Veiculo {
     }
 
     public double getPreco() {
-        return preco;
+        return this.preco;
     }
 
     public void setPreco(double preco) {

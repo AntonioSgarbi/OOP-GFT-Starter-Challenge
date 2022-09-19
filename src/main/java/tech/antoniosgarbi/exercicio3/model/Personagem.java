@@ -33,7 +33,7 @@ public abstract class Personagem {
     public abstract void lvlUp();
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -41,7 +41,7 @@ public abstract class Personagem {
     }
 
     public int getVida() {
-        return vida;
+        return this.vida;
     }
 
     public void setVida(int vida) {
@@ -49,7 +49,7 @@ public abstract class Personagem {
     }
 
     public int getMana() {
-        return mana;
+        return this.mana;
     }
 
     public void setMana(int mana) {
@@ -57,7 +57,7 @@ public abstract class Personagem {
     }
 
     public int getXp() {
-        return xp;
+        return this.xp;
     }
 
     public void setXp(int xp) {
@@ -65,7 +65,7 @@ public abstract class Personagem {
     }
 
     public int getInteligencia() {
-        return inteligencia;
+        return this.inteligencia;
     }
 
     public void setInteligencia(int inteligencia) {
@@ -73,7 +73,7 @@ public abstract class Personagem {
     }
 
     public int getForca() {
-        return forca;
+        return this.forca;
     }
 
     public void setForca(int forca) {
@@ -81,7 +81,7 @@ public abstract class Personagem {
     }
 
     public int getLevel() {
-        return level;
+        return this.level;
     }
 
     public void setLevel(int level) {

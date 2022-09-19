@@ -18,10 +18,10 @@ public class Loja {
     }
 
     public void listaLivros() {
-        if(livros.isEmpty()) {
+        if(this.livros.isEmpty()) {
             System.out.println("A loja não tem livros no seu estoque.\n");
         } else {
-            System.out.println("A loja " + nome + " possui estes livros para venda:\n");
+            System.out.println("A loja " + this.nome + " possui estes livros para venda:\n");
             for(Livro livro : livros) {
                 System.out.println(livro);
             }
@@ -29,11 +29,11 @@ public class Loja {
     }
 
     public void listaVideoGames() {
-        if(videoGames.isEmpty()) {
+        if(this.videoGames.isEmpty()) {
             System.out.println("A loja não tem video-games no seu estoque\n");
         } else {
-            System.out.println("A loja " + nome + ", possui estes video-games para venda: \n");
-            for(VideoGame videoGame : videoGames) {
+            System.out.println("A loja " + this.nome + ", possui estes video-games para venda: \n");
+            for(VideoGame videoGame : this.videoGames) {
                 System.out.println(videoGame);
             }
 
@@ -42,18 +42,18 @@ public class Loja {
 
     public double calculaPatrimonio() {
         double patrimonio = 0;
-        for(Livro livro : livros) {
+        for(Livro livro : this.livros) {
             patrimonio += (livro.getPreco() * livro.getQtd());
         }
-        for (VideoGame videoGame : videoGames) {
+        for (VideoGame videoGame : this.videoGames) {
             patrimonio += (videoGame.getPreco() * videoGame.getQtd());
         }
-        System.out.printf("O patrimonio da loja: %s é de R$%.2f", nome, patrimonio);
+        System.out.printf("O patrimonio da loja: %s é de R$%.2f", this.nome, patrimonio);
         return patrimonio;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -61,7 +61,7 @@ public class Loja {
     }
 
     public String getCnpj() {
-        return cnpj;
+        return this.cnpj;
     }
 
     public void setCnpj(String cnpj) {
@@ -69,7 +69,7 @@ public class Loja {
     }
 
     public List<Livro> getLivros() {
-        return livros;
+        return this.livros;
     }
 
     public void setLivros(List<Livro> livros) {
@@ -77,7 +77,7 @@ public class Loja {
     }
 
     public List<VideoGame> getVideoGames() {
-        return videoGames;
+        return this.videoGames;
     }
 
     public void setVideoGames(List<VideoGame> videoGames) {
