@@ -22,9 +22,7 @@ public class Loja {
             System.out.println("A loja não tem livros no seu estoque.\n");
         } else {
             System.out.println("A loja " + this.nome + " possui estes livros para venda:\n");
-            for(Livro livro : livros) {
-                System.out.println(livro);
-            }
+            this.livros.forEach(System.out::println);
         }
     }
 
@@ -33,21 +31,17 @@ public class Loja {
             System.out.println("A loja não tem video-games no seu estoque\n");
         } else {
             System.out.println("A loja " + this.nome + ", possui estes video-games para venda: \n");
-            for(VideoGame videoGame : this.videoGames) {
-                System.out.println(videoGame);
-            }
-
+            this.videoGames.forEach(System.out::println);
         }
     }
 
     public double calculaPatrimonio() {
         double patrimonio = 0;
-        for(Livro livro : this.livros) {
-            patrimonio += (livro.getPreco() * livro.getQtd());
-        }
-        for (VideoGame videoGame : this.videoGames) {
-            patrimonio += (videoGame.getPreco() * videoGame.getQtd());
-        }
+
+        patrimonio += livros.stream().mapToDouble(livro -> livro.getPreco() * livro.getQtd()).sum();
+
+        patrimonio += videoGames.stream().mapToDouble(videoGame -> videoGame.getPreco() * videoGame.getQtd()).sum();
+
         System.out.printf("O patrimonio da loja: %s é de R$%.2f", this.nome, patrimonio);
         return patrimonio;
     }

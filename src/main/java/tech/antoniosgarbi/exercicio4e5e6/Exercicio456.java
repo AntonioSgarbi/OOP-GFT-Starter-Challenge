@@ -1,6 +1,7 @@
 package tech.antoniosgarbi.exercicio4e5e6;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Exercicio456 {
@@ -21,27 +22,16 @@ public class Exercicio456 {
 
         System.out.println("\n\nExercício 4:\n");
 
-        int maiorIdade = -1;
-        Pessoa pessoaMaisVelha = new Pessoa();
-        for(Pessoa pessoa : pessoas) {
-            if(pessoa.getIdade() > maiorIdade) {
-                pessoaMaisVelha = pessoa;
-            }
-        }
-        System.out.println("A pessoa mais velha da lista é: " + pessoaMaisVelha.getNome());
+        pessoas.stream().max(Comparator.comparingInt(Pessoa::getIdade))
+                .ifPresent(maisVelho -> System.out.println("A pessoa mais velha da lista é: " + maisVelho.getNome()));
 
         //--------------------------------------------------------------------------------------------------------------
 
         System.out.println("\n\nExercício 5:\n");
 
         int quantidadePessoasAntes = pessoas.size();
-        List<Pessoa> pessoasMaiores = new ArrayList<>();
+        List<Pessoa> pessoasMaiores = pessoas.stream().filter(pessoa -> pessoa.getIdade() >= 18).toList();
 
-        for(Pessoa pessoa : pessoas) {
-            if(pessoa.getIdade() >= 18) {
-                pessoasMaiores.add(pessoa);
-            }
-        }
         int quantidadeMaiores = pessoasMaiores.size();
         System.out.println("Quantidade total de pessoas: " + quantidadePessoasAntes);
         System.out.println("Quantidade de maiores de idade: " + quantidadeMaiores);
@@ -50,11 +40,10 @@ public class Exercicio456 {
 
         System.out.println("\n\nExercício 6:\n");
 
-        for(Pessoa pessoa : pessoas) {
-            if(pessoa.getNome().equals("Jessica")) {
-                System.out.println("Jessica está na lista, sua idade é: " + pessoa.getNome());
-            }
-        }
+        pessoas.forEach(pessoa -> {
+            if(pessoa.getNome().equals("Jessica"))
+                System.out.println("Jessica está na lista, sua idade é: " + pessoa.getIdade());
 
+        });
     }
 }
