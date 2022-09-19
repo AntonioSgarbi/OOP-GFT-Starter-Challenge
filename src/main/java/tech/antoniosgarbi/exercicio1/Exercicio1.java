@@ -4,32 +4,43 @@ import java.util.Scanner;
 
 public class Exercicio1 {
     public static void main(String[] args) {
-        System.out.println("\n\nExercicio 1\n");
-
         Scanner scanner = new Scanner(System.in);
 
         Veiculo veiculo = new Veiculo();
-        System.out.println("\nO veiculo foi criado!");
+        boolean continuar = true;
+        System.out.println("O carro foi criado!");
+        do {
+            System.out.println("""
+                    Açôes disponíveis:
+                    
+                    1 - ligar
+                    2 - acelerar
+                    3 - frear
+                    4 - abastecer
+                    5 - pintar
+                    6 - desligar
+                    0 - Sair
+                    
+                    """);
+            System.out.print("Insira o número da ação: ");
+            byte opcao = scanner.nextByte();
 
-        System.out.println("\nveicular.ligar()");
-        veiculo.ligar();
-
-        System.out.println("\nveiculo.acelerar()");
-        veiculo.acelerar();
-
-        System.out.println("\nveiculo.abastecer(20)");
-        veiculo.abastecer(20);
-
-        System.out.println("\nveiculo.pintar(\"preto\")");
-        veiculo.pintar("preto");
-
-        System.out.println("\nveiculo.desligar()");
-        veiculo.desligar();
-
-        System.out.println("\nveiculo.frear()");
-        veiculo.frear();
-
-        System.out.println("\nveiculo.desligar()");
-        veiculo.desligar();
+            switch (opcao) {
+                case 1 -> veiculo.ligar();
+                case 2 -> veiculo.acelerar();
+                case 3 -> veiculo.frear();
+                case 4 -> {
+                    System.out.println("Deseja abastecer quantos litros: ");
+                    veiculo.abastecer(scanner.nextInt());
+                }
+                case 5 -> {
+                    System.out.println("Deseja pintar o carro de qual cor: ");
+                    veiculo.pintar(scanner.nextLine());
+                }
+                case 6 -> veiculo.desligar();
+                case 0 -> continuar = false;
+                default -> System.out.println("A opção é inválida!");
+            }
+        } while (continuar);
     }
 }
