@@ -9,7 +9,6 @@ public class Exercicio1 {
         Scanner scanner = new Scanner(System.in);
 
         Veiculo veiculo = new Veiculo();
-        boolean continuar = true;
         System.out.println("\nO veiculo foi criado!");
 
         System.out.println("\nveicular.ligar()");
