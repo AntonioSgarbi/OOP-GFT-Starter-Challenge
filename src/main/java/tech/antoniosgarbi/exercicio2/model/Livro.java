@@ -1,42 +1,21 @@
 package tech.antoniosgarbi.exercicio2.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import tech.antoniosgarbi.exercicio2.interfaces.Imposto;
 
+@Data
+@NoArgsConstructor
 public class Livro extends Produto implements Imposto {
     private String autor;
     private String tema;
     private int qtdPag;
 
-    public Livro() { }
-
     public Livro(String nome, double preco, int qtd, String autor, String tema, int qtdPag) {
         super(nome, preco, qtd);
         this.autor = autor;
         this.tema = tema;
-        this.qtdPag = qtdPag;
-    }
-
-    public String getAutor() {
-        return this.autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public String getTema() {
-        return this.tema;
-    }
-
-    public void setTema(String tema) {
-        this.tema = tema;
-    }
-
-    public int getQtdPag() {
-        return this.qtdPag;
-    }
-
-    public void setQtdPag(int qtdPag) {
         this.qtdPag = qtdPag;
     }
 

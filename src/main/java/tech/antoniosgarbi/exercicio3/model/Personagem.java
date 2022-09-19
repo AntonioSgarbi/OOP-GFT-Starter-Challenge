@@ -1,7 +1,10 @@
 package tech.antoniosgarbi.exercicio3.model;
 
+import lombok.Data;
+
 import java.util.Random;
 
+@Data
 public abstract class Personagem {
     private String nome;
     private int vida;
@@ -31,62 +34,6 @@ public abstract class Personagem {
     private static Random random = new Random();
 
     public abstract void lvlUp();
-
-    public String getNome() {
-        return this.nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getVida() {
-        return this.vida;
-    }
-
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
-    public int getMana() {
-        return this.mana;
-    }
-
-    public void setMana(int mana) {
-        this.mana = mana;
-    }
-
-    public int getXp() {
-        return this.xp;
-    }
-
-    public void setXp(int xp) {
-        this.xp = xp;
-    }
-
-    public int getInteligencia() {
-        return this.inteligencia;
-    }
-
-    public void setInteligencia(int inteligencia) {
-        this.inteligencia = inteligencia;
-    }
-
-    public int getForca() {
-        return this.forca;
-    }
-
-    public void setForca(int forca) {
-        this.forca = forca;
-    }
-
-    public int getLevel() {
-        return this.level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
 
     public static Random getRandom() {
         return random;

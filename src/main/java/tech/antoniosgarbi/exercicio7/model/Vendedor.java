@@ -1,9 +1,11 @@
 package tech.antoniosgarbi.exercicio7.model;
 
-public class Vendedor extends Funcionario {
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-    public Vendedor() {
-    }
+@Data
+@NoArgsConstructor
+public class Vendedor extends Funcionario {
 
     public Vendedor(String nome, int idade, double salario) {
         super(nome, idade, salario);

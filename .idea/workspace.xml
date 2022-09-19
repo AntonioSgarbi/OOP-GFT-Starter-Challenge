@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="90da1c88-ab00-4552-b235-10f235c0c5ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio1/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Livro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio4e5e6/Exercicio456.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio4e5e6/Exercicio456.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio2/model/VideoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Mago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/antoniosgarbi/exercicio3/model/Personagem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +28,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Eqk4VP1EdMuRQ88KRgQQwFWxkj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -143,7 +160,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

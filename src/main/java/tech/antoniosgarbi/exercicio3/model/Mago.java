@@ -1,12 +1,14 @@
 package tech.antoniosgarbi.exercicio3.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Data
+@NoArgsConstructor
 public class Mago extends Personagem {
     private List<String> magias;
-
-    public Mago() {
-    }
 
     public Mago(String nome, int vida, int mana, int xp, int inteligencia, int forca, int level, List<String> magias) {
         super(nome, vida, mana, xp, inteligencia, forca, level);
@@ -43,14 +45,6 @@ public class Mago extends Personagem {
         System.out.println("Magia liberada: " + magia);
         this.magias.add(magia);
         System.out.println("Magias disponíveis: " + magias);
-    }
-
-    public List<String> getMagias() {
-        return this.magias;
-    }
-
-    public void setMagias(List<String> magias) {
-        this.magias = magias;
     }
 
 }
